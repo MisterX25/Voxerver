@@ -93,8 +93,8 @@ class VocabularyController extends Controller
     public function apiVocabulary($vid)
     {
         $title = Vocabulary::select("title")->where("id",$vid)->first()->title;
-        $words = Words::select("value1 as mValue1", "value2 as mValue2")->where("vocabulary_id",$vid)->get();
-        $fv = new FullVocabulary($title,$words);
+        $words = Words::select("id as mId", "value1 as mValue1", "value2 as mValue2")->where("vocabulary_id",$vid)->get();
+        $fv = new FullVocabulary($vid,$title,$words);
         return $fv;
     }
 }

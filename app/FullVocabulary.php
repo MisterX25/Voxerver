@@ -12,17 +12,19 @@ namespace App;
 
 class FullVocabulary
 {
+    private $mId;
     private $mTitle;
     private $mWords;
 
-    function __construct($title, $words)
+    function __construct($id, $title, $words)
     {
+        $this->mId = $id;
         $this->mTitle = $title;
         $this->mWords = $words;
     }
 
     function __toString()
     {
-        return "{\"mTitle\":\"".$this->mTitle."\", \"mWords\":".$this->mWords."}";
+        return "{\"mId\":\"".$this->mId."\", \"mTitle\":\"".$this->mTitle."\", \"mWords\":".$this->mWords."}";
     }
 }

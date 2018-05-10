@@ -1,0 +1,89 @@
+swagger: "2.0"
+info:
+  description: "Server for the Vox Android app built in the JAV1 class at CPNV.Allows to read vocabularies and personal assignments, and to post results of completed assignments"
+  version: "1.0.0"
+  title: "Swagger Vox"
+  contact:
+    email: "xavier.carrel@cpnv.ch"
+host: "voxerver"
+basePath: "/api/v1"
+schemes:
+- "http"
+paths:
+  /vocs:
+    get:
+      tags:
+      - "vocs"
+      summary: "Get all vocs"
+      description: "Get a list of all available vocabularies"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/VocTitle"
+
+  /vocs/{id}:
+    get:
+      summary: "Get one voc"
+      description: "Get a list of all available vocabularies"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "The id of the voc we want. "
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Vocabulary"
+
+definitions:
+  VocTitle:
+    type: "object"
+    required:
+    - "mId"
+    - "mTitle"
+    properties:
+      mId:
+        type: "integer"
+        format: "int64"
+      mTitle:
+        type: "string"
+        example: "Theme 5 - Clothing"
+        
+  Word:
+    type: "object"
+    required:
+    - "mValue1"
+    - "mValue2"
+    properties:
+      mValue1:
+        type: "string"
+      mValue2:
+        type: "string"
+        
+  Vocabulary:
+    type: "object"
+    required:
+    - "mId"
+    - "mTitle"
+    - "mWords"
+    properties:
+      mId:
+        type: "integer"
+        format: "int64"
+      mTitle:
+        type: "string"
+        example: "Theme 5 - Clothing"
+      mWords:
+        type: "array"
+        items: "Word"
