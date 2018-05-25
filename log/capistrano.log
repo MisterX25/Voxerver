@@ -2371,3 +2371,301 @@
   INFO [2e34cbbb] Running /usr/bin/env echo "Branch master (at dc1646c09871dc9f623a9bb1ee51bad73d6f4371) deployed as release 20180525124628 by Xavier" >> /home/voxerver/voxerver.mycpnv.ch/revisions.log as voxerver@voxerver.mycpnv.ch
  DEBUG [2e34cbbb] Command: cd /home/voxerver/voxerver.mycpnv.ch/releases && /usr/bin/env echo "Branch master (at dc1646c09871dc9f623a9bb1ee51bad73d6f4371) deployed as release 20180525124628 by Xavier" >> /home/voxerver/voxerver.mycpnv.ch/revisions.log
   INFO [2e34cbbb] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-05-25 15:54:21 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [24489966] Running /usr/bin/env mkdir -p /tmp as voxerver@voxerver.mycpnv.ch
+ DEBUG [24489966] Command: /usr/bin/env mkdir -p /tmp
+  INFO [24489966] Finished in 0.342 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-voxerver.mycpnv.ch-production-Xavier.sh 0.0%
+  INFO Uploading /tmp/git-ssh-voxerver.mycpnv.ch-production-Xavier.sh 100.0%
+  INFO [c23ed3bd] Running /usr/bin/env chmod 700 /tmp/git-ssh-voxerver.mycpnv.ch-production-Xavier.sh as voxerver@voxerver.mycpnv.ch
+ DEBUG [c23ed3bd] Command: /usr/bin/env chmod 700 /tmp/git-ssh-voxerver.mycpnv.ch-production-Xavier.sh
+  INFO [c23ed3bd] Finished in 0.075 seconds with exit status 0 (successful).
+  INFO [a577523f] Running /usr/bin/env git ls-remote https://github.com/XCarrel/Voxerver.git HEAD as voxerver@voxerver.mycpnv.ch
+ DEBUG [a577523f] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-voxerver.mycpnv.ch-production-Xavier.sh" ; /usr/bin/env git ls-remote https://github.com/XCarrel/Voxerver.git HEAD )
+ DEBUG [a577523f] 	611b2362d9b15a94ea8d6b9b99e5d1e90b99b573	HEAD
+  INFO [a577523f] Finished in 0.884 seconds with exit status 0 (successful).
+  INFO [af71bff5] Running /usr/bin/env mkdir -p /home/voxerver/voxerver.mycpnv.ch/shared /home/voxerver/voxerver.mycpnv.ch/releases as voxerver@voxerver.mycpnv.ch
+ DEBUG [af71bff5] Command: /usr/bin/env mkdir -p /home/voxerver/voxerver.mycpnv.ch/shared /home/voxerver/voxerver.mycpnv.ch/releases
+  INFO [af71bff5] Finished in 0.077 seconds with exit status 0 (successful).
+  INFO [0b98e2f7] Running /usr/bin/env mkdir -p /home/voxerver/voxerver.mycpnv.ch/shared/storage/app /home/voxerver/voxerver.mycpnv.ch/shared/storage/framework/cache /home/voxerver/voxerver.mycpnv.ch/shared/storage/framework/sessions /home/voxerver/voxerver.mycpnv.ch/shared/storage/framework/views /home/voxerver/voxerver.mycpnv.ch/shared/storage/logs as voxerver@voxerver.mycpnv.ch
+ DEBUG [0b98e2f7] Command: /usr/bin/env mkdir -p /home/voxerver/voxerver.mycpnv.ch/shared/storage/app /home/voxerver/voxerver.mycpnv.ch/shared/storage/framework/cache /home/voxerver/voxerver.mycpnv.ch/shared/storage/framework/sessions /home/voxerver/voxerver.mycpnv.ch/shared/storage/framework/views /home/voxerver/voxerver.mycpnv.ch/shared/storage/logs
+  INFO [0b98e2f7] Finished in 0.089 seconds with exit status 0 (successful).
+ DEBUG [68692b2d] Running [ -f /home/voxerver/voxerver.mycpnv.ch/current/REVISION ] as voxerver@voxerver.mycpnv.ch
+ DEBUG [68692b2d] Command: [ -f /home/voxerver/voxerver.mycpnv.ch/current/REVISION ]
+ DEBUG [68692b2d] Finished in 0.067 seconds with exit status 0 (successful).
+ DEBUG [c6d1f8e6] Running /usr/bin/env cat /home/voxerver/voxerver.mycpnv.ch/current/REVISION 2>/dev/null as voxerver@voxerver.mycpnv.ch
+ DEBUG [c6d1f8e6] Command: /usr/bin/env cat /home/voxerver/voxerver.mycpnv.ch/current/REVISION 2>/dev/null
+ DEBUG [c6d1f8e6] 	dc1646c09871dc9f623a9bb1ee51bad73d6f4371
+ DEBUG [c6d1f8e6] Finished in 0.073 seconds with exit status 0 (successful).
+ DEBUG [50cd4d13] Running if test ! -d /home/voxerver/voxerver.mycpnv.ch/shared; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/shared'" 1>&2; false; fi as voxerver@voxerver.mycpnv.ch
+ DEBUG [50cd4d13] Command: if test ! -d /home/voxerver/voxerver.mycpnv.ch/shared; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [50cd4d13] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [8019ac3d] Running /usr/bin/env mkdir -p storage/app as voxerver@voxerver.mycpnv.ch
+ DEBUG [8019ac3d] Command: cd /home/voxerver/voxerver.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/app
+  INFO [8019ac3d] Finished in 0.084 seconds with exit status 0 (successful).
+ DEBUG [56240baa] Running if test ! -d /home/voxerver/voxerver.mycpnv.ch/shared; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/shared'" 1>&2; false; fi as voxerver@voxerver.mycpnv.ch
+ DEBUG [56240baa] Command: if test ! -d /home/voxerver/voxerver.mycpnv.ch/shared; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [56240baa] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [e126e898] Running /usr/bin/env mkdir -p storage/framework/cache as voxerver@voxerver.mycpnv.ch
+ DEBUG [e126e898] Command: cd /home/voxerver/voxerver.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/framework/cache
+  INFO [e126e898] Finished in 0.074 seconds with exit status 0 (successful).
+ DEBUG [6e3574ec] Running if test ! -d /home/voxerver/voxerver.mycpnv.ch/shared; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/shared'" 1>&2; false; fi as voxerver@voxerver.mycpnv.ch
+ DEBUG [6e3574ec] Command: if test ! -d /home/voxerver/voxerver.mycpnv.ch/shared; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [6e3574ec] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [89aafa75] Running /usr/bin/env mkdir -p storage/framework/sessions as voxerver@voxerver.mycpnv.ch
+ DEBUG [89aafa75] Command: cd /home/voxerver/voxerver.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/framework/sessions
+  INFO [89aafa75] Finished in 0.085 seconds with exit status 0 (successful).
+ DEBUG [29243a5f] Running if test ! -d /home/voxerver/voxerver.mycpnv.ch/shared; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/shared'" 1>&2; false; fi as voxerver@voxerver.mycpnv.ch
+ DEBUG [29243a5f] Command: if test ! -d /home/voxerver/voxerver.mycpnv.ch/shared; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [29243a5f] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [07f3a1ca] Running /usr/bin/env mkdir -p storage/framework/views as voxerver@voxerver.mycpnv.ch
+ DEBUG [07f3a1ca] Command: cd /home/voxerver/voxerver.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/framework/views
+  INFO [07f3a1ca] Finished in 0.304 seconds with exit status 0 (successful).
+ DEBUG [e242df98] Running if test ! -d /home/voxerver/voxerver.mycpnv.ch/shared; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/shared'" 1>&2; false; fi as voxerver@voxerver.mycpnv.ch
+ DEBUG [e242df98] Command: if test ! -d /home/voxerver/voxerver.mycpnv.ch/shared; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [e242df98] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [f74719bc] Running /usr/bin/env mkdir -p storage/logs as voxerver@voxerver.mycpnv.ch
+ DEBUG [f74719bc] Command: cd /home/voxerver/voxerver.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/logs
+  INFO [f74719bc] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [60e3c5f4] Running [ -f /home/voxerver/voxerver.mycpnv.ch/repo/HEAD ] as voxerver@voxerver.mycpnv.ch
+ DEBUG [60e3c5f4] Command: [ -f /home/voxerver/voxerver.mycpnv.ch/repo/HEAD ]
+ DEBUG [60e3c5f4] Finished in 0.174 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/voxerver/voxerver.mycpnv.ch/repo
+ DEBUG [3381caab] Running if test ! -d /home/voxerver/voxerver.mycpnv.ch/repo; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/repo'" 1>&2; false; fi as voxerver@voxerver.mycpnv.ch
+ DEBUG [3381caab] Command: if test ! -d /home/voxerver/voxerver.mycpnv.ch/repo; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [3381caab] Finished in 0.114 seconds with exit status 0 (successful).
+  INFO [3dff470b] Running /usr/bin/env git remote set-url origin https://github.com/XCarrel/Voxerver.git as voxerver@voxerver.mycpnv.ch
+ DEBUG [3dff470b] Command: cd /home/voxerver/voxerver.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-voxerver.mycpnv.ch-production-Xavier.sh" ; /usr/bin/env git remote set-url origin https://github.com/XCarrel/Voxerver.git )
+  INFO [3dff470b] Finished in 0.185 seconds with exit status 0 (successful).
+  INFO [cb60eb52] Running /usr/bin/env git remote update --prune as voxerver@voxerver.mycpnv.ch
+ DEBUG [cb60eb52] Command: cd /home/voxerver/voxerver.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-voxerver.mycpnv.ch-production-Xavier.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [cb60eb52] 	Fetching origin
+ DEBUG [cb60eb52] 	From https://github.com/XCarrel/Voxerver
+   dc1646c..611b236  master     -> master
+  INFO [cb60eb52] Finished in 1.687 seconds with exit status 0 (successful).
+ DEBUG [daa02acf] Running if test ! -d /home/voxerver/voxerver.mycpnv.ch/repo; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/repo'" 1>&2; false; fi as voxerver@voxerver.mycpnv.ch
+ DEBUG [daa02acf] Command: if test ! -d /home/voxerver/voxerver.mycpnv.ch/repo; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [daa02acf] Finished in 0.072 seconds with exit status 0 (successful).
+  INFO [db4fb8cf] Running /usr/bin/env mkdir -p /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424 as voxerver@voxerver.mycpnv.ch
+ DEBUG [db4fb8cf] Command: cd /home/voxerver/voxerver.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-voxerver.mycpnv.ch-production-Xavier.sh" ; /usr/bin/env mkdir -p /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424 )
+  INFO [db4fb8cf] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [f7e1d720] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424 as voxerver@voxerver.mycpnv.ch
+ DEBUG [f7e1d720] Command: cd /home/voxerver/voxerver.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-voxerver.mycpnv.ch-production-Xavier.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424 )
+  INFO [f7e1d720] Finished in 0.083 seconds with exit status 0 (successful).
+ DEBUG [143a3423] Running if test ! -d /home/voxerver/voxerver.mycpnv.ch/repo; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/repo'" 1>&2; false; fi as voxerver@voxerver.mycpnv.ch
+ DEBUG [143a3423] Command: if test ! -d /home/voxerver/voxerver.mycpnv.ch/repo; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [143a3423] Finished in 0.091 seconds with exit status 0 (successful).
+ DEBUG [f5e9b67e] Running /usr/bin/env git rev-list --max-count=1 master as voxerver@voxerver.mycpnv.ch
+ DEBUG [f5e9b67e] Command: cd /home/voxerver/voxerver.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-voxerver.mycpnv.ch-production-Xavier.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [f5e9b67e] 	611b2362d9b15a94ea8d6b9b99e5d1e90b99b573
+ DEBUG [f5e9b67e] Finished in 0.077 seconds with exit status 0 (successful).
+ DEBUG [f9eade16] Running if test ! -d /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/releases/20180525135424'" 1>&2; false; fi as voxerver@voxerver.mycpnv.ch
+ DEBUG [f9eade16] Command: if test ! -d /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/releases/20180525135424'" 1>&2; false; fi
+ DEBUG [f9eade16] Finished in 0.083 seconds with exit status 0 (successful).
+  INFO [6eca4bfa] Running /usr/bin/env echo "611b2362d9b15a94ea8d6b9b99e5d1e90b99b573" > REVISION as voxerver@voxerver.mycpnv.ch
+ DEBUG [6eca4bfa] Command: cd /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424 && /usr/bin/env echo "611b2362d9b15a94ea8d6b9b99e5d1e90b99b573" > REVISION
+  INFO [6eca4bfa] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [c249a3e5] Running /usr/bin/env mkdir -p /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework as voxerver@voxerver.mycpnv.ch
+ DEBUG [c249a3e5] Command: /usr/bin/env mkdir -p /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework
+  INFO [c249a3e5] Finished in 0.073 seconds with exit status 0 (successful).
+ DEBUG [1761904e] Running [ -L /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/app ] as voxerver@voxerver.mycpnv.ch
+ DEBUG [1761904e] Command: [ -L /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/app ]
+ DEBUG [1761904e] Finished in 0.112 seconds with exit status 1 (failed).
+ DEBUG [7c359aba] Running [ -d /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/app ] as voxerver@voxerver.mycpnv.ch
+ DEBUG [7c359aba] Command: [ -d /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/app ]
+ DEBUG [7c359aba] Finished in 0.107 seconds with exit status 0 (successful).
+  INFO [d16e367e] Running /usr/bin/env rm -rf /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/app as voxerver@voxerver.mycpnv.ch
+ DEBUG [d16e367e] Command: /usr/bin/env rm -rf /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/app
+  INFO [d16e367e] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [55ad2595] Running /usr/bin/env ln -s /home/voxerver/voxerver.mycpnv.ch/shared/storage/app /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/app as voxerver@voxerver.mycpnv.ch
+ DEBUG [55ad2595] Command: /usr/bin/env ln -s /home/voxerver/voxerver.mycpnv.ch/shared/storage/app /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/app
+  INFO [55ad2595] Finished in 0.095 seconds with exit status 0 (successful).
+ DEBUG [4d2f18ea] Running [ -L /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/cache ] as voxerver@voxerver.mycpnv.ch
+ DEBUG [4d2f18ea] Command: [ -L /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/cache ]
+ DEBUG [4d2f18ea] Finished in 0.102 seconds with exit status 1 (failed).
+ DEBUG [7b7dff1c] Running [ -d /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/cache ] as voxerver@voxerver.mycpnv.ch
+ DEBUG [7b7dff1c] Command: [ -d /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/cache ]
+ DEBUG [7b7dff1c] Finished in 0.320 seconds with exit status 0 (successful).
+  INFO [bb013a16] Running /usr/bin/env rm -rf /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/cache as voxerver@voxerver.mycpnv.ch
+ DEBUG [bb013a16] Command: /usr/bin/env rm -rf /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/cache
+  INFO [bb013a16] Finished in 0.074 seconds with exit status 0 (successful).
+  INFO [3e0fab08] Running /usr/bin/env ln -s /home/voxerver/voxerver.mycpnv.ch/shared/storage/framework/cache /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/cache as voxerver@voxerver.mycpnv.ch
+ DEBUG [3e0fab08] Command: /usr/bin/env ln -s /home/voxerver/voxerver.mycpnv.ch/shared/storage/framework/cache /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/cache
+  INFO [3e0fab08] Finished in 0.080 seconds with exit status 0 (successful).
+ DEBUG [0e659e7f] Running [ -L /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/sessions ] as voxerver@voxerver.mycpnv.ch
+ DEBUG [0e659e7f] Command: [ -L /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/sessions ]
+ DEBUG [0e659e7f] Finished in 0.067 seconds with exit status 1 (failed).
+ DEBUG [334d7b85] Running [ -d /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/sessions ] as voxerver@voxerver.mycpnv.ch
+ DEBUG [334d7b85] Command: [ -d /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/sessions ]
+ DEBUG [334d7b85] Finished in 0.075 seconds with exit status 0 (successful).
+  INFO [53f82b94] Running /usr/bin/env rm -rf /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/sessions as voxerver@voxerver.mycpnv.ch
+ DEBUG [53f82b94] Command: /usr/bin/env rm -rf /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/sessions
+  INFO [53f82b94] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [e3761999] Running /usr/bin/env ln -s /home/voxerver/voxerver.mycpnv.ch/shared/storage/framework/sessions /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/sessions as voxerver@voxerver.mycpnv.ch
+ DEBUG [e3761999] Command: /usr/bin/env ln -s /home/voxerver/voxerver.mycpnv.ch/shared/storage/framework/sessions /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/sessions
+  INFO [e3761999] Finished in 0.067 seconds with exit status 0 (successful).
+ DEBUG [c68b6b92] Running [ -L /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/views ] as voxerver@voxerver.mycpnv.ch
+ DEBUG [c68b6b92] Command: [ -L /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/views ]
+ DEBUG [c68b6b92] Finished in 0.069 seconds with exit status 1 (failed).
+ DEBUG [c0389729] Running [ -d /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/views ] as voxerver@voxerver.mycpnv.ch
+ DEBUG [c0389729] Command: [ -d /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/views ]
+ DEBUG [c0389729] Finished in 0.083 seconds with exit status 0 (successful).
+  INFO [12d69718] Running /usr/bin/env rm -rf /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/views as voxerver@voxerver.mycpnv.ch
+ DEBUG [12d69718] Command: /usr/bin/env rm -rf /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/views
+  INFO [12d69718] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO [10d67e90] Running /usr/bin/env ln -s /home/voxerver/voxerver.mycpnv.ch/shared/storage/framework/views /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/views as voxerver@voxerver.mycpnv.ch
+ DEBUG [10d67e90] Command: /usr/bin/env ln -s /home/voxerver/voxerver.mycpnv.ch/shared/storage/framework/views /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/framework/views
+  INFO [10d67e90] Finished in 0.065 seconds with exit status 0 (successful).
+ DEBUG [bd492554] Running [ -L /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/logs ] as voxerver@voxerver.mycpnv.ch
+ DEBUG [bd492554] Command: [ -L /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/logs ]
+ DEBUG [bd492554] Finished in 0.282 seconds with exit status 1 (failed).
+ DEBUG [ecc2744f] Running [ -d /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/logs ] as voxerver@voxerver.mycpnv.ch
+ DEBUG [ecc2744f] Command: [ -d /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/logs ]
+ DEBUG [ecc2744f] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO [27733b2b] Running /usr/bin/env rm -rf /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/logs as voxerver@voxerver.mycpnv.ch
+ DEBUG [27733b2b] Command: /usr/bin/env rm -rf /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/logs
+  INFO [27733b2b] Finished in 0.106 seconds with exit status 0 (successful).
+  INFO [25e1bb96] Running /usr/bin/env ln -s /home/voxerver/voxerver.mycpnv.ch/shared/storage/logs /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/logs as voxerver@voxerver.mycpnv.ch
+ DEBUG [25e1bb96] Command: /usr/bin/env ln -s /home/voxerver/voxerver.mycpnv.ch/shared/storage/logs /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/storage/logs
+  INFO [25e1bb96] Finished in 0.064 seconds with exit status 0 (successful).
+ DEBUG [b3c49e01] Running if test ! -d /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/releases/20180525135424'" 1>&2; false; fi as voxerver@voxerver.mycpnv.ch
+ DEBUG [b3c49e01] Command: if test ! -d /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/releases/20180525135424'" 1>&2; false; fi
+ DEBUG [b3c49e01] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO [973dd564] Running php -d allow_url_fopen=true /home/voxerver/voxerver.mycpnv.ch/shared/composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader as voxerver@voxerver.mycpnv.ch
+ DEBUG [973dd564] Command: cd /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424 && php -d allow_url_fopen=true /home/voxerver/voxerver.mycpnv.ch/shared/composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader
+ DEBUG [973dd564] 	Loading composer repositories with package information
+ DEBUG [973dd564] 	Installing dependencies from lock file
+ DEBUG [973dd564] 	Package operations: 31 installs, 0 updates, 0 removals
+ DEBUG [973dd564] 	  - Installing doctrine/inflector (v1.1.0): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing erusev/parsedown (1.6.2): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing jakub-onderka/php-console-color (0.1): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing symfony/polyfill-mbstring (v1.3.0): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing symfony/var-dumper (v3.2.8): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing psr/log (1.0.2): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing symfony/debug (v3.2.8): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing symfony/console (v3.2.8): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing nikic/php-parser (v3.0.5): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing jakub-onderka/php-console-highlighter (v0.3.2): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	  - Installing dnoegel/php-xdg-base-dir (0.1): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing psy/psysh (v0.8.3): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing vlucas/phpdotenv (v2.4.0): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing symfony/css-selector (v3.2.8): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing tijsverkoyen/css-to-inline-styles (2.2.0): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	  - Installing symfony/routing (v3.2.8): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing symfony/process (v3.2.8): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing symfony/http-foundation (v3.2.8): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing symfony/event-dispatcher (v3.2.8): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing symfony/http-kernel (v3.2.8): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing symfony/finder (v3.2.8): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing swiftmailer/swiftmailer (v5.4.7): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing paragonie/random_compat (v2.0.10): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing ramsey/uuid (3.6.1): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing symfony/translation (v3.2.8): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing nesbot/carbon (1.22.1): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing mtdowling/cron-expression (v1.2.0): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing monolog/monolog (1.22.1): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing league/flysystem (1.0.40): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing laravel/framework (v5.4.21): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	  - Installing laravel/tinker (v1.0.0): 
+ DEBUG [973dd564] 	Loading from cache
+ DEBUG [973dd564] 	
+ DEBUG [973dd564] 	Generating optimized autoload files
+ DEBUG [973dd564] 	> Illuminate\Foundation\ComposerScripts::postInstall
+ DEBUG [973dd564] 	> php artisan optimize
+ DEBUG [973dd564] 	Generating optimized class loader
+ DEBUG [973dd564] 	The compiled services file has been removed.
+  INFO [973dd564] Finished in 1.910 seconds with exit status 0 (successful).
+ DEBUG [94d91cd3] Running if test ! -d /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/releases/20180525135424'" 1>&2; false; fi as voxerver@voxerver.mycpnv.ch
+ DEBUG [94d91cd3] Command: if test ! -d /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/releases/20180525135424'" 1>&2; false; fi
+ DEBUG [94d91cd3] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [6ea23afb] Running /usr/bin/env php artisan storage:link --env=production as voxerver@voxerver.mycpnv.ch
+ DEBUG [6ea23afb] Command: cd /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424 && /usr/bin/env php artisan storage:link --env=production
+ DEBUG [6ea23afb] 	The [public/storage] directory has been linked.
+  INFO [6ea23afb] Finished in 0.246 seconds with exit status 0 (successful).
+ DEBUG [86f886be] Running if test ! -d /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/releases/20180525135424'" 1>&2; false; fi as voxerver@voxerver.mycpnv.ch
+ DEBUG [86f886be] Command: if test ! -d /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/releases/20180525135424'" 1>&2; false; fi
+ DEBUG [86f886be] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [938d4b3c] Running /usr/bin/env php artisan optimize --force --env=production as voxerver@voxerver.mycpnv.ch
+ DEBUG [938d4b3c] Command: cd /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424 && /usr/bin/env php artisan optimize --force --env=production
+ DEBUG [938d4b3c] 	Generating optimized class loader
+ DEBUG [938d4b3c] 	The compiled services file has been removed.
+  INFO [938d4b3c] Finished in 0.262 seconds with exit status 0 (successful).
+  INFO [e17f9bc9] Running /usr/bin/env cp /home/voxerver/voxerver.mycpnv.ch/shared/.env /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/.env as voxerver@voxerver.mycpnv.ch
+ DEBUG [e17f9bc9] Command: /usr/bin/env cp /home/voxerver/voxerver.mycpnv.ch/shared/.env /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424/.env
+  INFO [e17f9bc9] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [37fed3f1] Running /usr/bin/env ln -s /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424 /home/voxerver/voxerver.mycpnv.ch/releases/current as voxerver@voxerver.mycpnv.ch
+ DEBUG [37fed3f1] Command: /usr/bin/env ln -s /home/voxerver/voxerver.mycpnv.ch/releases/20180525135424 /home/voxerver/voxerver.mycpnv.ch/releases/current
+  INFO [37fed3f1] Finished in 0.071 seconds with exit status 0 (successful).
+  INFO [b5c89e0d] Running /usr/bin/env mv /home/voxerver/voxerver.mycpnv.ch/releases/current /home/voxerver/voxerver.mycpnv.ch as voxerver@voxerver.mycpnv.ch
+ DEBUG [b5c89e0d] Command: /usr/bin/env mv /home/voxerver/voxerver.mycpnv.ch/releases/current /home/voxerver/voxerver.mycpnv.ch
+  INFO [b5c89e0d] Finished in 0.178 seconds with exit status 0 (successful).
+ DEBUG [b3d72f7c] Running /usr/bin/env ls -x /home/voxerver/voxerver.mycpnv.ch/releases as voxerver@voxerver.mycpnv.ch
+ DEBUG [b3d72f7c] Command: /usr/bin/env ls -x /home/voxerver/voxerver.mycpnv.ch/releases
+ DEBUG [b3d72f7c] 	20180525064025	20180525072959	20180525124628	20180525135424
+ DEBUG [b3d72f7c] Finished in 0.071 seconds with exit status 0 (successful).
+ DEBUG [7e43168d] Running if test ! -d /home/voxerver/voxerver.mycpnv.ch/releases; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/releases'" 1>&2; false; fi as voxerver@voxerver.mycpnv.ch
+ DEBUG [7e43168d] Command: if test ! -d /home/voxerver/voxerver.mycpnv.ch/releases; then echo "Directory does not exist '/home/voxerver/voxerver.mycpnv.ch/releases'" 1>&2; false; fi
+ DEBUG [7e43168d] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [326869e8] Running /usr/bin/env echo "Branch master (at 611b2362d9b15a94ea8d6b9b99e5d1e90b99b573) deployed as release 20180525135424 by Xavier" >> /home/voxerver/voxerver.mycpnv.ch/revisions.log as voxerver@voxerver.mycpnv.ch
+ DEBUG [326869e8] Command: cd /home/voxerver/voxerver.mycpnv.ch/releases && /usr/bin/env echo "Branch master (at 611b2362d9b15a94ea8d6b9b99e5d1e90b99b573) deployed as release 20180525135424 by Xavier" >> /home/voxerver/voxerver.mycpnv.ch/revisions.log
+  INFO [326869e8] Finished in 0.095 seconds with exit status 0 (successful).
