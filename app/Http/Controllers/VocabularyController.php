@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\FullVocabulary;
+use App\Languages;
 use App\Vocabulary;
 use App\Words;
 use Illuminate\Http\Request;
@@ -90,6 +91,11 @@ class VocabularyController extends Controller
         return Vocabulary::select("id as mId","title as mTitle")->get();
     }
 
+    public function apiLangList()
+    {
+        return Languages::select("id as lId","languageName as lName")->get();
+    }
+
     public function apiVocabulary($vid)
     {
         $title = Vocabulary::select("title")->where("id",$vid)->first()->title;
@@ -97,4 +103,11 @@ class VocabularyController extends Controller
         $fv = new FullVocabulary($vid,$title,$words);
         return $fv;
     }
+
+    public function apiLangVocList($lid1,$lid2)
+    {
+        $res = Vocabulary::select("id as mId","title as mTitle")->where("language1_id",$lid1)->where("language2_id",$lid2)->get();
+        return $res;
+    }
+
 }

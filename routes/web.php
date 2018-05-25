@@ -19,4 +19,10 @@ Route::resource('/vocs', 'VocabularyController');
 
 Route::get('/api/v1/vocs', 'VocabularyController@apiVocList');
 
-Route::get('/api/v1/vocs/{vid}', 'VocabularyController@apiVocabulary');
+Route::get('/api/v1/languages', 'VocabularyController@apiLangList');
+
+Route::get('/api/v1/vocs/{lid1}/{lid2}', 'VocabularyController@apiLangVocList');
+
+Route::get('/api/v1/vocs', 'VocabularyController@apiVocList');
+
+Route::get('/api/v1/voc/{vid}', 'VocabularyController@apiVocabulary');

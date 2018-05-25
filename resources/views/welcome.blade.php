@@ -68,7 +68,7 @@
 <div class="flex-center position-ref full-height">
     <div class="content text-sm-left">
         <div class="title m-b-md">
-            Vox Server
+            Vox Server!!
         </div>
         <h4>Points d'appel</h4>
         <table style="text-align: left">
