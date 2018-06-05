@@ -81,6 +81,10 @@
                 <td style="padding: 5px">api/v1/vocs</td>
             </tr>
             <tr>
+                <td style="padding: 5px">Liste des vocabulaires avec leurs mots</td>
+                <td style="padding: 5px">api/v1/fullvocs</td>
+            </tr>
+            <tr>
                 <td style="padding: 5px">Liste des vocabulaires avec les langues X et Y (id)</td>
                 <td style="padding: 5px">api/v1/vocs/X/Y</td>
             </tr>

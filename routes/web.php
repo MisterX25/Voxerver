@@ -25,4 +25,6 @@ Route::get('/api/v1/vocs/{lid1}/{lid2}', 'VocabularyController@apiLangVocList');
 
 Route::get('/api/v1/vocs', 'VocabularyController@apiVocList');
 
+Route::get('/api/v1/fullvocs', 'VocabularyController@apiFullVocList');
+
 Route::get('/api/v1/voc/{vid}', 'VocabularyController@apiVocabulary');

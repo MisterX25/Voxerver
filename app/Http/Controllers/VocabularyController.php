@@ -91,6 +91,18 @@ class VocabularyController extends Controller
         return Vocabulary::select("id as mId","title as mTitle")->get();
     }
 
+    public function apiFullVocList()
+    {
+        $vocs = Vocabulary::select("id as mId","title as mTitle", "language1_id as mLang1", "language2_id as mLang2")->get();
+        for ($v = 0; $v < count($vocs); $v++)
+        {
+            $words = Words::select("id as mId","value1 as mValue1","value2 as mValue2")->where("vocabulary_id","=",$vocs[$v]->mId)->get();
+            $vocs[$v]['Words']=$words;
+        }
+
+        return $vocs;
+    }
+
     public function apiLangList()
     {
         return Languages::select("id as lId","languageName as lName")->get();
