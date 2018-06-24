@@ -90,7 +90,16 @@
             </tr>
             <tr>
                 <td style="padding: 5px">Contenu d'un vocabulaire précis</td>
-                <td style="padding: 5px">api/v1/voc/X</td>
+                <td style="padding: 5px">api/v1/voc/{id}</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px">Liste des devoirs d'un élève</td>
+                <td style="padding: 5px">api/v1/assignments/{token}</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px">Retour de résultat (POST)</td>
+                <td style="padding: 5px">api/v1/result</td>
+                <td style="padding: 5px">id : of the assignment (NOT the vocabulary!)<br>token : authenticates the user<br>result : score</td>
             </tr>
         </table>
     </div>

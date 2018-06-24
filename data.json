@@ -1,0 +1,714 @@
+[
+  {
+    "mId": 1,
+    "mTitle": "Les Couleurs",
+    "mLang1": 1,
+    "mLang2": 2,
+    "Words": [
+      {
+        "mId": 1,
+        "mValue1": "blanc",
+        "mValue2": "white"
+      },
+      {
+        "mId": 2,
+        "mValue1": "bleu",
+        "mValue2": "blue"
+      },
+      {
+        "mId": 3,
+        "mValue1": "bleu clair",
+        "mValue2": "light blue"
+      },
+      {
+        "mId": 4,
+        "mValue1": "bleu fonc\u00e9",
+        "mValue2": "dark blue"
+      },
+      {
+        "mId": 5,
+        "mValue1": "multicolore",
+        "mValue2": "muli-colored"
+      },
+      {
+        "mId": 6,
+        "mValue1": "rose",
+        "mValue2": "pink"
+      },
+      {
+        "mId": 7,
+        "mValue1": "gris",
+        "mValue2": "grey"
+      },
+      {
+        "mId": 8,
+        "mValue1": "rouge",
+        "mValue2": "red"
+      },
+      {
+        "mId": 9,
+        "mValue1": "vert",
+        "mValue2": "green"
+      },
+      {
+        "mId": 10,
+        "mValue1": "marron",
+        "mValue2": "brown"
+      },
+      {
+        "mId": 11,
+        "mValue1": "noir",
+        "mValue2": "black"
+      },
+      {
+        "mId": 12,
+        "mValue1": "violet",
+        "mValue2": "purple"
+      },
+      {
+        "mId": 13,
+        "mValue1": "argent\u00e9",
+        "mValue2": "silver"
+      },
+      {
+        "mId": 14,
+        "mValue1": "beige",
+        "mValue2": "beige"
+      },
+      {
+        "mId": 15,
+        "mValue1": "jaune",
+        "mValue2": "yellow"
+      },
+      {
+        "mId": 16,
+        "mValue1": "turquoise",
+        "mValue2": "turquoise"
+      },
+      {
+        "mId": 17,
+        "mValue1": "orange",
+        "mValue2": "orange"
+      },
+      {
+        "mId": 18,
+        "mValue1": "dor\u00e9",
+        "mValue2": "golden"
+      },
+      {
+        "mId": 19,
+        "mValue1": "bordeaux",
+        "mValue2": "maroon"
+      }
+    ]
+  },
+  {
+    "mId": 2,
+    "mTitle": "Le Restaurant",
+    "mLang1": 1,
+    "mLang2": 2,
+    "Words": [
+      {
+        "mId": 20,
+        "mValue1": "le gar\u00e7on",
+        "mValue2": "the waiter"
+      },
+      {
+        "mId": 21,
+        "mValue1": "la serveuse",
+        "mValue2": "the waitress"
+      },
+      {
+        "mId": 22,
+        "mValue1": "bon app\u00e9tit",
+        "mValue2": "enjoy your meal"
+      },
+      {
+        "mId": 23,
+        "mValue1": "une r\u00e9servation",
+        "mValue2": "reservation"
+      },
+      {
+        "mId": 24,
+        "mValue1": "la carte",
+        "mValue2": "menu"
+      },
+      {
+        "mId": 25,
+        "mValue1": "les sp\u00e9cialit\u00e9s",
+        "mValue2": "specialities"
+      },
+      {
+        "mId": 26,
+        "mValue1": "le pourboire",
+        "mValue2": "tip\/gratuity"
+      },
+      {
+        "mId": 27,
+        "mValue1": "lu0027addition",
+        "mValue2": "bill"
+      },
+      {
+        "mId": 28,
+        "mValue1": "le menu",
+        "mValue2": "set menu"
+      },
+      {
+        "mId": 29,
+        "mValue1": "voil\u00e0!",
+        "mValue2": "here you go\/here it is!"
+      },
+      {
+        "mId": 30,
+        "mValue1": "les ingr\u00e9dients",
+        "mValue2": "ingredients"
+      },
+      {
+        "mId": 31,
+        "mValue1": "le service",
+        "mValue2": "the service"
+      },
+      {
+        "mId": 32,
+        "mValue1": "une boisson",
+        "mValue2": "beverage"
+      },
+      {
+        "mId": 33,
+        "mValue1": "le repas",
+        "mValue2": "meal"
+      },
+      {
+        "mId": 34,
+        "mValue1": "le verre",
+        "mValue2": "glass"
+      },
+      {
+        "mId": 35,
+        "mValue1": "le plat",
+        "mValue2": "dish"
+      },
+      {
+        "mId": 36,
+        "mValue1": "br\u00fbl\u00e9",
+        "mValue2": "burnt"
+      },
+      {
+        "mId": 37,
+        "mValue1": "froid",
+        "mValue2": "cold"
+      },
+      {
+        "mId": 38,
+        "mValue1": "\u00e9pic\u00e9",
+        "mValue2": "spicy"
+      },
+      {
+        "mId": 39,
+        "mValue1": "la soupe",
+        "mValue2": "soup"
+      },
+      {
+        "mId": 40,
+        "mValue1": "les entr\u00e9es",
+        "mValue2": "entrees"
+      },
+      {
+        "mId": 41,
+        "mValue1": "la salade",
+        "mValue2": "salad"
+      },
+      {
+        "mId": 42,
+        "mValue1": "le plat principal",
+        "mValue2": "main dish"
+      },
+      {
+        "mId": 43,
+        "mValue1": "le dessert",
+        "mValue2": "dessert"
+      },
+      {
+        "mId": 44,
+        "mValue1": "lu0027ap\u00e9ritif",
+        "mValue2": "aperitif"
+      }
+    ]
+  },
+  {
+    "mId": 3,
+    "mTitle": "Les affaires",
+    "mLang1": 1,
+    "mLang2": 2,
+    "Words": [
+      {
+        "mId": 45,
+        "mValue1": "les affaires",
+        "mValue2": "business"
+      },
+      {
+        "mId": 46,
+        "mValue1": "lu0027homme du0027affaires",
+        "mValue2": "businessman"
+      },
+      {
+        "mId": 47,
+        "mValue1": "la femme du0027affaires",
+        "mValue2": "business woman"
+      },
+      {
+        "mId": 48,
+        "mValue1": "le voyage d\u2018affaires",
+        "mValue2": "business trip"
+      },
+      {
+        "mId": 49,
+        "mValue1": "le d\u00e9jeuner du0027affaires",
+        "mValue2": "business lunch"
+      },
+      {
+        "mId": 50,
+        "mValue1": "le client",
+        "mValue2": "client"
+      },
+      {
+        "mId": 51,
+        "mValue1": "le contrat",
+        "mValue2": "business deals"
+      },
+      {
+        "mId": 52,
+        "mValue1": "le directeur g\u00e9n\u00e9ral",
+        "mValue2": "managing director"
+      },
+      {
+        "mId": 53,
+        "mValue1": "le chef",
+        "mValue2": "boss"
+      },
+      {
+        "mId": 54,
+        "mValue1": "le rendez-vous",
+        "mValue2": "meeting"
+      },
+      {
+        "mId": 55,
+        "mValue1": "lu0027ordinateur de poche",
+        "mValue2": "handheld computer"
+      },
+      {
+        "mId": 56,
+        "mValue1": "le portable",
+        "mValue2": "laptop"
+      },
+      {
+        "mId": 57,
+        "mValue1": "les notes",
+        "mValue2": "notes"
+      },
+      {
+        "mId": 58,
+        "mValue1": "la soci\u00e9t\u00e9",
+        "mValue2": "company"
+      },
+      {
+        "mId": 59,
+        "mValue1": "le personnel",
+        "mValue2": "staff\/employees"
+      },
+      {
+        "mId": 60,
+        "mValue1": "le si\u00e8ge social",
+        "mValue2": "head office"
+      },
+      {
+        "mId": 61,
+        "mValue1": "la succursale",
+        "mValue2": "branch"
+      },
+      {
+        "mId": 62,
+        "mValue1": "le salaire",
+        "mValue2": "salary"
+      },
+      {
+        "mId": 63,
+        "mValue1": "le livre de paie",
+        "mValue2": "payroll"
+      },
+      {
+        "mId": 64,
+        "mValue1": "le service marketing",
+        "mValue2": "marketing department"
+      },
+      {
+        "mId": 65,
+        "mValue1": "les services de vente",
+        "mValue2": "sales department"
+      },
+      {
+        "mId": 66,
+        "mValue1": "la comptabilit\u00e9",
+        "mValue2": "accounting department"
+      },
+      {
+        "mId": 67,
+        "mValue1": "le service de contentieux",
+        "mValue2": "legal department"
+      },
+      {
+        "mId": 68,
+        "mValue1": "le service de ressources humaines",
+        "mValue2": "human resources department"
+      },
+      {
+        "mId": 69,
+        "mValue1": "la gestion\/direction",
+        "mValue2": "management"
+      },
+      {
+        "mId": 70,
+        "mValue1": "les honoraires",
+        "mValue2": "fees"
+      },
+      {
+        "mId": 71,
+        "mValue1": "un entretien",
+        "mValue2": "interview"
+      },
+      {
+        "mId": 72,
+        "mValue1": "la formation",
+        "mValue2": "training"
+      },
+      {
+        "mId": 73,
+        "mValue1": "le poste",
+        "mValue2": "post\/job"
+      },
+      {
+        "mId": 74,
+        "mValue1": "lu0027acheteur",
+        "mValue2": "buyer"
+      },
+      {
+        "mId": 75,
+        "mValue1": "le vendeur",
+        "mValue2": "seller"
+      },
+      {
+        "mId": 76,
+        "mValue1": "lu0027associ\u00e9",
+        "mValue2": "partner"
+      },
+      {
+        "mId": 77,
+        "mValue1": "le bail",
+        "mValue2": "lease\/rental contract"
+      },
+      {
+        "mId": 78,
+        "mValue1": "le b\u00e9n\u00e9fice",
+        "mValue2": "profit"
+      },
+      {
+        "mId": 79,
+        "mValue1": "les biens",
+        "mValue2": "assets"
+      },
+      {
+        "mId": 80,
+        "mValue1": "brut",
+        "mValue2": "gross"
+      },
+      {
+        "mId": 81,
+        "mValue1": "le chiffre du0027affaire",
+        "mValue2": "sales\/turnover"
+      },
+      {
+        "mId": 82,
+        "mValue1": "le chef du0027entreprise",
+        "mValue2": "boss of the company"
+      },
+      {
+        "mId": 83,
+        "mValue1": "le concurrent",
+        "mValue2": "competitor"
+      },
+      {
+        "mId": 84,
+        "mValue1": "la compte",
+        "mValue2": "account"
+      },
+      {
+        "mId": 85,
+        "mValue1": "la direction",
+        "mValue2": "management"
+      },
+      {
+        "mId": 86,
+        "mValue1": "lu0027entrepreneur",
+        "mValue2": "entrepreneur"
+      },
+      {
+        "mId": 87,
+        "mValue1": "lu0027\u00e9tude de march\u00e9",
+        "mValue2": "market study"
+      },
+      {
+        "mId": 88,
+        "mValue1": "faire faillite",
+        "mValue2": "to go bankrupt"
+      },
+      {
+        "mId": 89,
+        "mValue1": "les frais",
+        "mValue2": "fees"
+      },
+      {
+        "mId": 90,
+        "mValue1": "la g\u00e9rance",
+        "mValue2": "management"
+      },
+      {
+        "mId": 91,
+        "mValue1": "la gestion",
+        "mValue2": "management"
+      },
+      {
+        "mId": 92,
+        "mValue1": "lu0027imp\u00f4t",
+        "mValue2": "tax"
+      },
+      {
+        "mId": 93,
+        "mValue1": "la liquidation",
+        "mValue2": "liquidation"
+      },
+      {
+        "mId": 94,
+        "mValue1": "la location",
+        "mValue2": "rental"
+      },
+      {
+        "mId": 95,
+        "mValue1": "le main-du0027oeuvre",
+        "mValue2": "workforce"
+      },
+      {
+        "mId": 96,
+        "mValue1": "le paiement",
+        "mValue2": "payment"
+      },
+      {
+        "mId": 97,
+        "mValue1": "la perte",
+        "mValue2": "loss"
+      },
+      {
+        "mId": 98,
+        "mValue1": "la soci\u00e9t\u00e9 anonyme",
+        "mValue2": "limited company"
+      }
+    ]
+  },
+  {
+    "mId": 4,
+    "mTitle": "Lu0027art",
+    "mLang1": 1,
+    "mLang2": 2,
+    "Words": [
+      {
+        "mId": 99,
+        "mValue1": "lu0027art",
+        "mValue2": "art"
+      },
+      {
+        "mId": 100,
+        "mValue1": "les arts et m\u00e9tiers",
+        "mValue2": "arts and crafts"
+      },
+      {
+        "mId": 101,
+        "mValue1": "lu0027artist",
+        "mValue2": "artist"
+      },
+      {
+        "mId": 102,
+        "mValue1": "lu0027artiste peintre",
+        "mValue2": "artist\/painer"
+      },
+      {
+        "mId": 103,
+        "mValue1": "le tableau",
+        "mValue2": "painting"
+      },
+      {
+        "mId": 104,
+        "mValue1": "la toile",
+        "mValue2": "canvas"
+      },
+      {
+        "mId": 105,
+        "mValue1": "le chevalet",
+        "mValue2": "easel"
+      },
+      {
+        "mId": 106,
+        "mValue1": "la peinture",
+        "mValue2": "peinting"
+      },
+      {
+        "mId": 107,
+        "mValue1": "le pinceau",
+        "mValue2": "brush"
+      },
+      {
+        "mId": 108,
+        "mValue1": "la palette",
+        "mValue2": "palette"
+      },
+      {
+        "mId": 109,
+        "mValue1": "les couleurs",
+        "mValue2": "paints\/colors"
+      },
+      {
+        "mId": 110,
+        "mValue1": "les peintures \u00e0 lu0027huile",
+        "mValue2": "oil paints"
+      },
+      {
+        "mId": 111,
+        "mValue1": "lu0027aquarelle watercolor",
+        "mValue2": "paint"
+      },
+      {
+        "mId": 112,
+        "mValue1": "les pastels",
+        "mValue2": "pastels"
+      },
+      {
+        "mId": 113,
+        "mValue1": "lu0027acrylique",
+        "mValue2": "acrylic paint"
+      },
+      {
+        "mId": 114,
+        "mValue1": "la gouache",
+        "mValue2": "poster paint"
+      },
+      {
+        "mId": 115,
+        "mValue1": "le dessin",
+        "mValue2": "drawing"
+      },
+      {
+        "mId": 116,
+        "mValue1": "le crayon",
+        "mValue2": "pencil"
+      },
+      {
+        "mId": 117,
+        "mValue1": "le fusain",
+        "mValue2": "charcoal"
+      },
+      {
+        "mId": 118,
+        "mValue1": "lu0027encre",
+        "mValue2": "ink"
+      },
+      {
+        "mId": 119,
+        "mValue1": "le croquis",
+        "mValue2": "sketch"
+      },
+      {
+        "mId": 120,
+        "mValue1": "le carnet \u00e0 croquis",
+        "mValue2": "sketch pad"
+      },
+      {
+        "mId": 121,
+        "mValue1": "lu0027imprimerie",
+        "mValue2": "printing"
+      },
+      {
+        "mId": 122,
+        "mValue1": "la gravure",
+        "mValue2": "engraving"
+      },
+      {
+        "mId": 123,
+        "mValue1": "la sculpture",
+        "mValue2": "sculpting"
+      },
+      {
+        "mId": 124,
+        "mValue1": "le maillet",
+        "mValue2": "mallet"
+      },
+      {
+        "mId": 125,
+        "mValue1": "la pierre",
+        "mValue2": "stone"
+      },
+      {
+        "mId": 126,
+        "mValue1": "la scupture sur bois",
+        "mValue2": "woodworking"
+      },
+      {
+        "mId": 127,
+        "mValue1": "le bois",
+        "mValue2": "wood"
+      },
+      {
+        "mId": 128,
+        "mValue1": "le burin",
+        "mValue2": "chisel"
+      },
+      {
+        "mId": 129,
+        "mValue1": "la poterie ",
+        "mValue2": "pottery"
+      },
+      {
+        "mId": 130,
+        "mValue1": "lu0027argile",
+        "mValue2": "clay"
+      },
+      {
+        "mId": 131,
+        "mValue1": "le tour de potier",
+        "mValue2": "potteru0027s wheel"
+      },
+      {
+        "mId": 132,
+        "mValue1": "la spatule",
+        "mValue2": "modelling tool"
+      },
+      {
+        "mId": 133,
+        "mValue1": "la joaillerie",
+        "mValue2": "jewelery making"
+      },
+      {
+        "mId": 134,
+        "mValue1": "le paper m\u00e2ch\u00e9",
+        "mValue2": "paper m\u00e2ch\u00e9"
+      },
+      {
+        "mId": 135,
+        "mValue1": "lu0027origami",
+        "mValue2": "origami"
+      },
+      {
+        "mId": 136,
+        "mValue1": "le mod\u00e9lisme",
+        "mValue2": "model making"
+      }
+    ]
+  }
+]
