@@ -44,6 +44,7 @@ class AssignmentController extends Controller
         $id = $request->id;
         $result = $request->result;
         $token = $request->token;
+        error_log("Result submitted: $id, $result, $token");
         // verify ownership
         $exists = \DB::table('users')
             ->join('personalAssignments', 'users.id', '=', 'personalAssignments.user_id')
@@ -55,7 +56,6 @@ class AssignmentController extends Controller
 
         if(!$exists) abort(403, 'This assignment doesn\'t belong to you');
 
-        error_log(print_r($request,1));
         $assignment = PersonalAssignment::find($id);
         $assignment->result = $result;
         $assignment->save();
