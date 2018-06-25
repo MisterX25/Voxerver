@@ -27,12 +27,7 @@ class AssignmentController extends Controller
                 else
                     abort(500, "Ca peut arriver...");
                 return;
-                error_log("Zbang....");
             }
-        }
-        else
-        {
-            error_log("Bosse....");
         }
 
         return json_encode(\DB::table('users')
