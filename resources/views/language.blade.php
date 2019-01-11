@@ -17,48 +17,30 @@
 
         <div class="content">
             <div class="title m-b-md">
-                Administration
+                Langages
             </div>
-
             <div class="links">
-                <a href="/">Home</a>
-
-                @if (count($things) > 0)
-                    <form method="post" action="/admin/kill">
-                        <!--We need this TOKEN to have acces to the controller. if not, Error 419 -->
-                        @csrf
-                        <table>
+                @if (count($languages) > 0)
+                    <form method="post" action="/language/kill">
+                        <table class="table table-hover">
                             <tr>
-                                <th>Nom</th>
-                                <th>#Briques</th>
-                                <th>Couleur</th>
+                                <th scope="col">Nom</th>
+                                <th scope="col" colspan="2">Action</th>
                             </tr>
 
-                            @foreach($things as $thing)
+                            @foreach($languages as $language)
                                 <tr>
-                                    <td><a href="admin/hide/{{$thing->id}}">{{$thing->name}}</a></td>
-                                    <td>{{$thing->nbBricks}}</td>
-                                    <td>
-                                        @foreach($thing->color as $color)
-                                            <span>{{$color->name}}</span>
-                                        @endforeach
-                                    </td>
+                                    <td class="align-middle">{{$language->languageName}}</td>
                                     <!-- Give to the button the value of the ID line -->
-                                    <td><button name="delid" value="{{ $thing->id }}">Supprimer</button></td>
+                                    <td><button class="btn btn-secondary" name="renameid" value="{{ $language->id }}">Renommer</button></td>
+                                    <td><button class="btn btn-danger" name="delid" value="{{ $language->id }}">Supprimer</button></td>
                                 </tr>
                             @endforeach
-                            <form method="post" action="/admin/create">
-                                @csrf
-                                <tr>
-                                    <td><input type="text" name="id"></td>
-                                    <td><input type="text" name="name"></td>
-                                    <td><input type="text" name="nbBricks"></td>
-                                    <td><input type="text" name="color"></td>
-                                    <td><input type="submit" name="create" value="Créer"></td>
-                                </tr>
-                            </form>
+                        </table>
+                    </form>
+                    <div class="Home"><a href="{{ url('/') }}">Retour à l'accueil</a></div>
                             @else
-                                <div>On a aucune choses</div>
+                                <div>Aucun langage disponible</div>
                         </table>
                     </form>
                 @endif
@@ -66,5 +48,6 @@
             </div>
         </div>
     </div>
+
 @endsection
 

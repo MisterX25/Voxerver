@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/languages', 'LanguageController@index');
+
+
+
+
 Route::resource('/vocs', 'VocabularyController');
 
 Route::get('/api/v1/vocs', 'VocabularyController@apiVocList');

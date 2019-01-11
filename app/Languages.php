@@ -18,14 +18,6 @@ class Languages extends Model
     }
 
     /**
-     * @param mixed $id
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-
-    /**
      * @return mixed
      */
     public function getName()
@@ -41,5 +33,10 @@ class Languages extends Model
         $this->name = $name;
     }
 
+
+    public function languages()
+    {
+        return $this->belongsToMany('app\Languages');
+    }
 
 }

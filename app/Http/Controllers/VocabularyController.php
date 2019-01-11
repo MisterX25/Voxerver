@@ -88,7 +88,8 @@ class VocabularyController extends Controller
 
     public function apiVocList()
     {
-        return Vocabulary::select("id as mId","title as mTitle")->get();
+        $languages = Languages::all();
+        return $languages;
     }
 
     public function apiFullVocList()
