@@ -42,7 +42,7 @@
                         @csrf
                         <div class="form-group">
                             <label for="addlanguage">Langue à ajouter</label>
-                            <input type="text" class="form-control" id="addlanguage" placeholder="Langue"><br>
+                            <input type="text" class="form-control" name="addlanguage" placeholder="Langue"><br>
                             <button type="submit" name="addlang" class="btn btn-success">Ajouter</button>
                         </div>
                     </form>

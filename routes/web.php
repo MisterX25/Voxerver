@@ -19,6 +19,7 @@ Route::get('/languages', 'LanguageController@index');
 
 Route::post('/languages/create','LanguageController@store');
 
+Route::post('/languages/delete','LanguageController@delete');
 
 Route::resource('/vocs', 'VocabularyController');
 

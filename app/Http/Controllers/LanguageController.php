@@ -22,17 +22,18 @@ class LanguageController extends Controller
 
     public function store(Request $request){
         $language = new Languages();
+        $language->languageName = $request->addlanguage;
         $language->save();
-        $languages = Languages::all();
-        return redirect('languages')->with('languages', $languages);
+
+        return redirect('languages');
     }
 
     public function delete(Request $request){
-        $language = Thing::find($request->get());
+        //dd($request);
+        $language = Languages::find($request->delid);
         $language->delete();
 
-        $languages = Languages::all();
-        return redirect('languages')->with('languages', $languages)
+        return redirect('languages');
     }
 
 }
