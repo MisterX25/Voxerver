@@ -21,8 +21,8 @@
             </div>
             <div class="links">
                 @if (count($languages) > 0)
-                    <form method="post" action="/language/delete">
-                        {{ csrf_field() }}
+                    <form method="post" action="/languages/delete">
+                        @csrf
                         <table class="table table-hover">
                             <tr>
                                 <th scope="col">Nom</th>
@@ -39,7 +39,7 @@
                         </table>
                     </form>
                     <form method="post" action="/languages/create">
-                        {{ csrf_field() }}
+                        @csrf
                         <div class="form-group">
                             <label for="addlanguage">Langue à ajouter</label>
                             <input type="text" class="form-control" id="addlanguage" placeholder="Langue"><br>
@@ -52,10 +52,10 @@
                             </form>
                                 <div>Aucun langue disponible</div><br><br>
                                 <form method="post" action="/languages/create">
-                                    {{ csrf_field() }}
+                                    @csrf
                                     <div class="form-group">
                                         <label for="addlanguage">Veuillez rajouter une langue</label>
-                                        <input type="text" class="form-control" id="addlanguage" placeholder="Langue"><br>
+                                        <input type="text" class="form-control" id="namelang" placeholder="Langue"><br>
                                         <button type="button" name="addlang" class="btn btn-success">Ajouter</button>
                                     </div>
                                 </form>

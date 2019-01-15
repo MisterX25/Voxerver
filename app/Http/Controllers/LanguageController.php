@@ -10,6 +10,7 @@ namespace App\Http\Controllers;
 
 use App\Languages;
 use Illuminate\Http\Request;
+use Log;
 
 class LanguageController extends Controller
 {
@@ -21,10 +22,17 @@ class LanguageController extends Controller
 
     public function store(Request $request){
         $language = new Languages();
-        $language->setName($request->name);
         $language->save();
         $languages = Languages::all();
         return redirect('languages')->with('languages', $languages);
+    }
+
+    public function delete(Request $request){
+        $language = Thing::find($request->get());
+        $language->delete();
+
+        $languages = Languages::all();
+        return redirect('languages')->with('languages', $languages)
     }
 
 }
