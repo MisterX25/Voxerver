@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Route::get('/languages', 'LanguageController@index');
 
-
+Route::post('/languages/create','LanguageController@store');
 
 
 Route::resource('/vocs', 'VocabularyController');

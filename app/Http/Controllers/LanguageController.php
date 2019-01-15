@@ -19,4 +19,12 @@ class LanguageController extends Controller
         return view('language')->with('languages', $languages);
     }
 
+    public function store(Request $request){
+        $language = new Languages();
+        $language->setName($request->name);
+        $language->save();
+        $languages = Languages::all();
+        return redirect('languages')->with('languages', $languages);
+    }
+
 }

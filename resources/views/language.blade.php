@@ -17,32 +17,50 @@
 
         <div class="content">
             <div class="title m-b-md">
-                Langages
+                Langues
             </div>
             <div class="links">
                 @if (count($languages) > 0)
-                    <form method="post" action="/language/kill">
+                    <form method="post" action="/language/delete">
+                        {{ csrf_field() }}
                         <table class="table table-hover">
                             <tr>
                                 <th scope="col">Nom</th>
-                                <th scope="col" colspan="2">Action</th>
+                                <th scope="col">Action</th>
                             </tr>
 
                             @foreach($languages as $language)
                                 <tr>
                                     <td class="align-middle">{{$language->languageName}}</td>
                                     <!-- Give to the button the value of the ID line -->
-                                    <td><button class="btn btn-secondary" name="renameid" value="{{ $language->id }}">Renommer</button></td>
                                     <td><button class="btn btn-danger" name="delid" value="{{ $language->id }}">Supprimer</button></td>
                                 </tr>
                             @endforeach
                         </table>
                     </form>
+                    <form method="post" action="/languages/create">
+                        {{ csrf_field() }}
+                        <div class="form-group">
+                            <label for="addlanguage">Langue à ajouter</label>
+                            <input type="text" class="form-control" id="addlanguage" placeholder="Langue"><br>
+                            <button type="submit" name="addlang" class="btn btn-success">Ajouter</button>
+                        </div>
+                    </form>
                     <div class="Home"><a href="{{ url('/') }}">Retour à l'accueil</a></div>
                             @else
-                                <div>Aucun langage disponible</div>
-                        </table>
-                    </form>
+                                    </table>
+                            </form>
+                                <div>Aucun langue disponible</div><br><br>
+                                <form method="post" action="/languages/create">
+                                    {{ csrf_field() }}
+                                    <div class="form-group">
+                                        <label for="addlanguage">Veuillez rajouter une langue</label>
+                                        <input type="text" class="form-control" id="addlanguage" placeholder="Langue"><br>
+                                        <button type="button" name="addlang" class="btn btn-success">Ajouter</button>
+                                    </div>
+                                </form>
+                                <div class="Home"><a href="{{ url('/') }}">Retour à l'accueil</a></div>
+
                 @endif
 
             </div>

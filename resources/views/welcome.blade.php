@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Voxserver</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -78,7 +78,7 @@
         <div class="card-deck">
             <div class="card">
                 <div class="card-body">
-                    <a href="/languages" class="card-link"><h4 class="card-title text-center">Langages</h4></a>
+                    <a href="/languages" class="card-link"><h4 class="card-title text-center">Langues</h4></a>
                     <p class="card-text text-center">Les langues disponibles sur le serveur.</p>
                 </div>
             </div>
