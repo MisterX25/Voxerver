@@ -21,6 +21,12 @@ Route::post('/languages/create','LanguageController@store');
 
 Route::post('/languages/delete','LanguageController@delete');
 
+
+Route::get('/themes', 'ThemeController@index');
+
+
+
+
 Route::resource('/vocs', 'VocabularyController');
 
 Route::get('/api/v1/vocs', 'VocabularyController@apiVocList');

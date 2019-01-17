@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use App\FullVocabulary;
 use App\Languages;
-use App\Vocabulary;
+use App\Themes;
 use App\Words;
 use Illuminate\Http\Request;
 
-class VocabularyController extends Controller
+class ThemeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +17,8 @@ class VocabularyController extends Controller
      */
     public function index()
     {
-        error_log("VocabularyController.index");
+        $themes = Themes::all();
+        return view('theme')->with('themes', $themes);
     }
 
     /**
@@ -38,7 +39,11 @@ class VocabularyController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $theme = new Themes();
+        $theme->title = $request->addlanguage;
+        $language->save();
+
+        return redirect('languages');
     }
 
     /**
@@ -94,7 +99,7 @@ class VocabularyController extends Controller
 
     public function apiFullVocList()
     {
-        $vocs = Vocabulary::select("id as mId","title as mTitle", "language1_id as mLang1", "language2_id as mLang2")->get();
+        $vocs = Themes::select("id as mId","title as mTitle", "language1_id as mLang1", "language2_id as mLang2")->get();
         for ($v = 0; $v < count($vocs); $v++)
         {
             $words = Words::select("id as mId","value1 as mValue1","value2 as mValue2")->where("vocabulary_id","=",$vocs[$v]->mId)->get();
@@ -111,7 +116,7 @@ class VocabularyController extends Controller
 
     public function apiVocabulary($vid)
     {
-        $title = Vocabulary::select("title")->where("id",$vid)->first()->title;
+        $title = Themes::select("title")->where("id",$vid)->first()->title;
         $words = Words::select("id as mId", "value1 as mValue1", "value2 as mValue2")->where("vocabulary_id",$vid)->get();
         $fv = new FullVocabulary($vid,$title,$words);
         return $fv;
@@ -119,7 +124,7 @@ class VocabularyController extends Controller
 
     public function apiLangVocList($lid1,$lid2)
     {
-        $res = Vocabulary::select("id as mId","title as mTitle")->where("language1_id",$lid1)->where("language2_id",$lid2)->get();
+        $res = Themes::select("id as mId","title as mTitle")->where("language1_id",$lid1)->where("language2_id",$lid2)->get();
         return $res;
     }
 
