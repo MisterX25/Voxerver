@@ -3,7 +3,7 @@
     <div class="flex-center position-ref full-height">
         <div class="content">
             <div class="title m-b-md">
-                Thèmes
+                Les mots
             </div>
             <div class="links">
                 @if (count($themes) > 0)
@@ -52,9 +52,4 @@
         </div>
     </div>
 @endsection
-@section('scripts')
-    jQuery(document).ready(function() {
-        jQuery("#this_needs_some_js").somejavascriptplugin();
-    });
-@stop
 
