@@ -24,6 +24,10 @@ Route::post('/languages/delete','LanguageController@delete');
 
 Route::get('/themes', 'ThemeController@index');
 
+Route::post('/themes/create','ThemeController@store');
+
+Route::post('/themes/delete','ThemeController@delete');
+
 
 
 

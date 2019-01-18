@@ -40,10 +40,17 @@ class ThemeController extends Controller
     public function store(Request $request)
     {
         $theme = new Themes();
-        $theme->title = $request->addlanguage;
-        $language->save();
+        $theme->title = $request->addvocabulary;
+        $theme->save();
 
-        return redirect('languages');
+        return redirect('themes');
+    }
+
+    public function delete(Request $request){
+        $theme = Themes::find($request->delid);
+        $theme->delete();
+
+        return redirect('themes');
     }
 
     /**

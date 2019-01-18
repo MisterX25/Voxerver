@@ -17,7 +17,7 @@
 
         <div class="content">
             <div class="title m-b-md">
-                Themes
+                Thèmes
             </div>
             <div class="links">
                 @if (count($themes) > 0)
@@ -41,9 +41,9 @@
                     <form method="post" action="/themes/create">
                         @csrf
                         <div class="form-group">
-                            <label for="addlanguage">Langue à ajouter</label>
-                            <input type="text" class="form-control" name="addlanguage" placeholder="Langue"><br>
-                            <button type="submit" name="addlang" class="btn btn-success">Ajouter</button>
+                            <label for="addlanguage">Thème à ajouter</label>
+                            <input type="text" class="form-control" name="addvocabulary" placeholder="Thème"><br>
+                            <button type="submit" name="addtheme" class="btn btn-success">Ajouter</button>
                         </div>
                     </form>
                     <div class="Home"><a href="{{ url('/') }}">Retour à l'accueil</a></div>
@@ -54,9 +54,9 @@
                     <form method="post" action="/languages/create">
                         @csrf
                         <div class="form-group">
-                            <label for="addlanguage">Veuillez rajouter une langue</label>
-                            <input type="text" class="form-control" name="addlanguage" placeholder="Langue"><br>
-                            <button type="submit" name="addlang" class="btn btn-success">Ajouter</button>
+                            <label for="addlanguage">Veuillez rajouter un thème</label>
+                            <input type="text" class="form-control" name="addvocabulary" placeholder="Thème"><br>
+                            <button type="submit" name="addtheme" class="btn btn-success">Ajouter</button>
                         </div>
                     </form>
                     <div class="Home"><a href="{{ url('/') }}">Retour à l'accueil</a></div>
