@@ -29,6 +29,11 @@ Route::post('/themes/create','ThemeController@store');
 Route::post('/themes/delete','ThemeController@delete');
 
 
+Route::get('/vocabularies', 'WordController@index');
+
+Route::get('/words/{id}','WordController@load');
+
+
 
 
 Route::resource('/vocs', 'VocabularyController');

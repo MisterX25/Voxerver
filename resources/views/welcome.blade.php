@@ -90,7 +90,7 @@
             </div>
             <div class="card">
                 <div class="card-body">
-                    <a href="/words" class="card-link"><h4 class="card-title text-center">Mots</h4></a>
+                    <a href="/vocabularies" class="card-link"><h4 class="card-title text-center">Mots</h4></a>
                     <p class="card-text text-center">Les mots qui sont enregistrés sur le serveur.</p>
                 </div>
             </div>
