@@ -11,6 +11,6 @@ class Themes extends Model
     protected $fillable = ['id', 'title'];
 
     public function words(){
-        return $this->belongsToMany('App/Words');
+        return $this->belongsToMany('App\Words');
     }
 }
