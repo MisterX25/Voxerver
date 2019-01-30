@@ -23,12 +23,14 @@
                     @endforeach
                 </table>
             </div>
+            <div class="addword">
+                <div class="selectfirstword">...</div> en <div class="selectlanguage">...</div> est
+                <input type="text" class="newword">
+                <button type="submit" name="addnewword" class="btn btn-success">Ajouter</button>
+            </div>
         </div>
     </div>
+    <script type="text/javascript" src="{{ asset('js/words.js') }}"></script>
+    <link href="{{ asset('css/words.css') }}" rel="stylesheet">
 @endsection
-@section('scripts')
-    jQuery(document).ready(function() {
-        jQuery("#this_needs_some_js").somejavascriptplugin();
-    });
-@stop
 
