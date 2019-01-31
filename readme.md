@@ -16,7 +16,7 @@ API server for education games. Front-End interface for adding vocabularies, the
 
 1. Clone the repo.
 
-2. Create the database with the model "Vox.mwb" available in the folder "database".
+2. Create the database with the model "Voxv2.mwb" available in the folder "database".
 
 3. Fill some datas in the DB with some values available in the Excel file "database/vox_data.xlsx".
 
