@@ -9,9 +9,11 @@
 }
 .selectfirstword{
   display: inline-block;
+  font-weight: bold;
 }
 .selectlanguage{
   display: inline-block;
+  font-weight: bold;
 }
 
 .addword{
