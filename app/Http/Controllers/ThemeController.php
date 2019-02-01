@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 class ThemeController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display all themes.
      *
      * @return \Illuminate\Http\Response
      */
@@ -22,17 +22,7 @@ class ThemeController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
+     * Add a new vocabulary to the themes.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -46,6 +36,7 @@ class ThemeController extends Controller
         return redirect('themes');
     }
 
+    // Delete a theme where the button got clicked.
     public function delete(Request $request){
         $theme = Themes::find($request->delid);
         $theme->delete();

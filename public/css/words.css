@@ -1,4 +1,4 @@
-.addword{
+.defword{
   padding: 20px;
   margin-left: 25%;
   margin-bottom: 10px;
@@ -12,4 +12,14 @@
 }
 .selectlanguage{
   display: inline-block;
+}
+
+.addword{
+  padding: 20px;
+  margin-left: 25%;
+  margin-bottom: 10px;
+  border-style: solid;
+  height: 80px;
+  width: 50%;
+  text-align: center;
 }

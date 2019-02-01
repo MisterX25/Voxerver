@@ -33,6 +33,10 @@ Route::get('/vocabularies', 'WordController@index');
 
 Route::get('/words/{id}','WordController@load');
 
+Route::post('/words/defword/{id}','WordController@update');
+
+Route::post('/words/addword/{id}','WordController@store');
+
 
 
 

@@ -14,12 +14,14 @@ use Log;
 
 class LanguageController extends Controller
 {
+    //Show all languages.
     public function index()
     {
         $languages = Languages::all();
         return view('language')->with('languages', $languages);
     }
 
+    //Add a new language.
     public function store(Request $request){
         $language = new Languages();
         $language->languageName = $request->addlanguage;
@@ -28,6 +30,7 @@ class LanguageController extends Controller
         return redirect('languages');
     }
 
+    //Delete a language where the button got clicked.
     public function delete(Request $request){
         //dd($request);
         $language = Languages::find($request->delid);
