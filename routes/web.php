@@ -15,6 +15,31 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/languages', 'LanguageController@index');
+
+Route::post('/languages/create','LanguageController@store');
+
+Route::post('/languages/delete','LanguageController@delete');
+
+
+Route::get('/themes', 'ThemeController@index');
+
+Route::post('/themes/create','ThemeController@store');
+
+Route::post('/themes/delete','ThemeController@delete');
+
+
+Route::get('/vocabularies', 'WordController@index');
+
+Route::get('/words/{id}','WordController@load');
+
+Route::post('/words/defword/{id}','WordController@update');
+
+Route::post('/words/addword/{id}','WordController@store');
+
+
+
+
 Route::resource('/vocs', 'VocabularyController');
 
 Route::get('/api/v1/vocs', 'VocabularyController@apiVocList');

@@ -1,0 +1,27 @@
+.defword{
+  padding: 20px;
+  margin-left: 25%;
+  margin-bottom: 10px;
+  border-style: solid;
+  height: 80px;
+  width: 50%;
+  text-align: center;
+}
+.selectfirstword{
+  display: inline-block;
+  font-weight: bold;
+}
+.selectlanguage{
+  display: inline-block;
+  font-weight: bold;
+}
+
+.addword{
+  padding: 20px;
+  margin-left: 25%;
+  margin-bottom: 10px;
+  border-style: solid;
+  height: 80px;
+  width: 50%;
+  text-align: center;
+}

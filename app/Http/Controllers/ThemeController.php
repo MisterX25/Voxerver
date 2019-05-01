@@ -4,41 +4,44 @@ namespace App\Http\Controllers;
 
 use App\FullVocabulary;
 use App\Languages;
-use App\Vocabulary;
+use App\Themes;
 use App\Words;
 use Illuminate\Http\Request;
 
-class VocabularyController extends Controller
+class ThemeController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display all themes.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        error_log("VocabularyController.index");
+        $themes = Themes::all();
+        return view('theme')->with('themes', $themes);
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
+     * Add a new vocabulary to the themes.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        //
+        $theme = new Themes();
+        $theme->title = $request->addvocabulary;
+        $theme->save();
+
+        return redirect('themes');
+    }
+
+    // Delete a theme where the button got clicked.
+    public function delete(Request $request){
+        $theme = Themes::find($request->delid);
+        $theme->delete();
+
+        return redirect('themes');
     }
 
     /**
@@ -88,12 +91,13 @@ class VocabularyController extends Controller
 
     public function apiVocList()
     {
-        return Vocabulary::select("id as mId","title as mTitle")->get();
+        $languages = Languages::all();
+        return $languages;
     }
 
     public function apiFullVocList()
     {
-        $vocs = Vocabulary::select("id as mId","title as mTitle", "language1_id as mLang1", "language2_id as mLang2")->get();
+        $vocs = Themes::select("id as mId","title as mTitle", "language1_id as mLang1", "language2_id as mLang2")->get();
         for ($v = 0; $v < count($vocs); $v++)
         {
             $words = Words::select("id as mId","value1 as mValue1","value2 as mValue2")->where("vocabulary_id","=",$vocs[$v]->mId)->get();
@@ -110,7 +114,7 @@ class VocabularyController extends Controller
 
     public function apiVocabulary($vid)
     {
-        $title = Vocabulary::select("title")->where("id",$vid)->first()->title;
+        $title = Themes::select("title")->where("id",$vid)->first()->title;
         $words = Words::select("id as mId", "value1 as mValue1", "value2 as mValue2")->where("vocabulary_id",$vid)->get();
         $fv = new FullVocabulary($vid,$title,$words);
         return $fv;
@@ -118,7 +122,7 @@ class VocabularyController extends Controller
 
     public function apiLangVocList($lid1,$lid2)
     {
-        $res = Vocabulary::select("id as mId","title as mTitle")->where("language1_id",$lid1)->where("language2_id",$lid2)->get();
+        $res = Themes::select("id as mId","title as mTitle")->where("language1_id",$lid1)->where("language2_id",$lid2)->get();
         return $res;
     }
 

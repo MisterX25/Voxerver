@@ -7,6 +7,25 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+
+# VOXSERVER
+
+API server for education games. Front-End interface for adding vocabularies, themes and words. This application is made with Laravel.
+
+## Installation
+
+1. Clone the repo.
+
+2. Create the database with the model "Voxv2.mwb" available in the folder "database".
+
+3. Fill some datas in the DB with some values available in the Excel file "database/vox_data.xlsx".
+
+3. Get in the project folder with cmder (or terminal on Mac/Linux) and run the command `composer install`.
+
+4. Create a .env file with the .env.exemple file (check on internet) and add DB connection.
+
+5. Get back in cmder and generate your key `php artisan key:generate`.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
